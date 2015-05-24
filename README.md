@@ -245,31 +245,29 @@ The mean_std_features_select vector was used to subset the full observations tab
 
 **** Step 3: Use descriptive activity names to name the activities in the data set
 
- The y data refers to each observational row, while the x data each column.	 The y data
+ The y data refers to each observational row, while the x data each column.The y data
  allows us to link a specific activity to each experimental observation row.  To begin, we
  the y_train and y_test data were merged into a single data frame. The resulting daa frame was named activty_linkage. 
- The names and number of the 6 activities wdere contained in the activity_labels.txt file, which was loaded into the activity_names data frame.
-
+ The names and number of the 6 activities wdere contained in the activity_labels.txt file, which was loaded into the activity_names data frame. 
+ 
  Dplyr was used to join to activity_linkage and activity_names to create a table of the activity being measured in each obserrvation trial. The resulting table, observation_activity, has 10299 rows, equal to the number of observational trials. It contains two variables, activity code and activity name.
 
  We now needed to merge subjects with the activities being monitored in eacb row of the
  observtional data. First, we needed to merge the subject training and testing data sets
- back into a single subjects data frame.
+ back into a single subjects data frame. The single column was named subject.  Each row has the number of the subject 
+ tested in that experimental trial.
 
- We could then merge the subjects and observation_activity columns to the leftmost side of the observationss_mean_std table.	This reconstructed the original structure of the  experimental observation data. Now each contains the measurements from one trial of one subject performing one activity.
+ We could then merge the subjects and observation_activity columns to the leftmost side of the observationss_mean_std table.	This reconstructed the original structure of the experimental observation data. Now each contains the measurements from one trial of one subject performing one activity.
 
 *** Step 4: Appropriately label the data set with descriptive variable names
 
  As described earlier, we initially used the original names from the feature.txt file for the mean and std features selected by the grep pattern match.
 
- As a next step wee used make.names to transform the original feature.txt names to
- syntactically valid names. Help for makes.names says that a syantactically valid name:
- consists of letters, numbers and the dot or underline characters and starts with a letter
- or the dot not followed by a number... All invalid characters are translated to "."
+ As a next step wee used make.names to transform the original feature.txt names to syntactically valid names. Help for makes.names says that a syantactically valid name: consists of letters, numbers and the dot or underline characters and starts with a letter or the dot not followed by a number... All invalid characters are translated to "."
 
  A side effect of make.names was that it generated names wih multiple periods where invalid characters were removed. We wanted to limit these to a single "." .  We used the sub() function to look for patterns of two periods  ".." or three periods "..." and replaced them with a single period.  This resulted in much cleaner variable names, that were still consistent with the original names used by the researchers.
  
- The result is that each of the 66 feature names has been rationalized and simplified,  For example, the feature named  "tBodyAcc-mean()-X"  now tBodyAcc.mean.X.
+ The result is that each of the 66 feature names has been rationalized and simplified,  For example, the feature named  "tBodyAcc-mean()-X"  is now "tBodyAcc.mean.X".
 
 **** Step 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 	
