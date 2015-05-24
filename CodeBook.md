@@ -83,6 +83,7 @@ They are measured within the time domain and had original measurements had units
  tBodyAccJerk.std.X 
 
  tBodyAccJerk.std.Y 
+ 
  tBodyAccJerk.std.Z 
  
  These are the averaged mean and standard deviation due to the subject's body of linear acceleration jerk, 
