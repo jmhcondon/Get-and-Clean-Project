@@ -1,6 +1,21 @@
-**** Please refer to the README.md for a detailed explanation of the script or how the table was created, including all transformations of the original dataset.*****
 
-**** The "sub_act_feature_avgs.txt" file was created by write.table() in R.  To view it properly please use read.table. *****
+**************
+The "sub_act_feature_avgs.txt" file output by the script was created by write.table() using row.name=FALSE. To view it
+properly in R please use read.table() using row.name=FALSE.
+**************
+
+**************
+To run the script the files created from unzipping samsung_exercise_data.zip must be in the working directory. The zip file may be downloaded at the following URL:
+
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles% 2FUCI%20HAR%20Dataset.zip
+
+A full description of the dataset is available at:
+http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition +Using+Smartphones
+**************
+
+**************
+Please refer to the README.md for a detailed explanation of the script and how the table was created, including all transformations of the original dataset.
+**************
 
 This is the codebook describing the independent tidy data set withthe average of each selected 
 mean and standard deviation variable for each activity and each subject.
@@ -12,7 +27,6 @@ Since 30 subjects participated, this results in 30 subjects by 6 activities each
 Each row has 66 columns, one for the average value of all the observation for the 66 mean and std features 
 for that subject performing that activity. Also, all the column features names have been simplified and made 
 syntactically correct.
-
 
 *** DATASET COLUMNS ***
 These are the columns in the dataset. There are 66 average and standard deviation feature variable columna, 
@@ -51,14 +65,12 @@ refects their order in the data set.
  tBodyAcc.std.Y 
  
  tBodyAcc.std.Z 
- 
 
-These are the averaged mean and standard deviation of total linear acceleration due to the mass of the subject's body.  
-Linear acceleration was recorded along the X, Y, and Z axes r by the Samsung smartphone's accelerometer. 
-They are measured within the time domain and had original measurements had units of standard gravity "g'.  
+The above are the averaged mean and standard deviation of total linear acceleration due to the mass of the subject's body.  
+Linear acceleration was recorded along the X, Y, and Z axes by the Samsung smartphone's accelerometer. 
+They are measured within the time domain and the original measurements had units of standard gravity "g'.  
 
  tGravityAcc.mean.X 
- 
  
  tGravityAcc.mean.Y 
  
@@ -70,7 +82,7 @@ They are measured within the time domain and had original measurements had units
  
  tGravityAcc.std.Z 
  
- These are the averaged mean and standard deviation of total linear acceleration due to gravity alone.  
+ The above are the averaged mean and standard deviation of total linear acceleration due to gravity alone.  
  Linear acceleration was recorded along the X, Y, and Z axes r by the Samsung smartphone's accelerometer. 
  They are measured within the time domain and had original measurements had units of standard gravity "g'.  
  
@@ -86,7 +98,7 @@ They are measured within the time domain and had original measurements had units
  
  tBodyAccJerk.std.Z 
  
- These are the averaged mean and standard deviation due to the subject's body of linear acceleration jerk, 
+ The above are the averaged mean and standard deviation due to the subject's body of linear acceleration jerk, 
  or the change in linear acceleration.  Jerk was derived by taking the derivative of linear acceleration
  along the X, Y, and Z axes. 
 
@@ -102,7 +114,7 @@ They are measured within the time domain and had original measurements had units
  
  tBodyGyro.std.Z
  
- These are the averaged mean and standard deviation of total angular velocity due to the mass of the subject's body.  Angular velocity was recorded along the X, Y, and Z axes r by the Samsung smartphone's gyroscope. They are measured within the time domain and had original measurements  units of radians/sec.  
+ The above are the averaged mean and standard deviation of total angular velocity due to the mass of the subject's body.  Angular velocity was recorded along the X, Y, and Z axes r by the Samsung smartphone's gyroscope. They are measured within the time domain and had original measurements  units of radians/sec.  
   
  tBodyGyroJerk.mean.X 
  
@@ -116,7 +128,7 @@ They are measured within the time domain and had original measurements had units
  
  tBodyGyroJerk.std.Z 
  
- These are the averaged mean and standard deviation due to the subject's body of angular acceleration jerk, 
+ The above are the averaged mean and standard deviation due to the subject's body of angular acceleration jerk, 
  or the change in angular acceleration.  Jerk was derived by taking the second derivative of angular velocity 
  along the X, Y, and Z axes.  It has units of radians per second^3
 
@@ -140,7 +152,7 @@ They are measured within the time domain and had original measurements had units
  
  tBodyGyroJerkMag.std 
  
- These measures are the mean and standard deviations of the magnitude (mag) of the underlying feature. 
+ The above measures are the mean and standard deviations of the magnitude (mag) of the underlying feature. 
  All of the above features are based on the original time domain signal from the Samsung phone, 
  as denoted by the leading 't'.
  
@@ -196,12 +208,12 @@ They are measured within the time domain and had original measurements had units
  
  fBodyBodyGyroJerkMag.std 
 
-All of these features are the result of applying a Fast Fourier Transform (FFT) 
+All of these features above are the result of applying a Fast Fourier Transform (FFT) 
 to transform the time domain signal to a frequency domain signal. This is denoted by the leading 'f'.
 
 *** Table Row Organization
 
-Each row represents summary of all the experimental observations od one subject's (numbered 1 to 6) 
+Each row represents a averaged summary of all the experimental observations of one subject's (numbered 1 to 6) 
 performance on one of the six activities.  The rows are grouped by subject and activity, therefore 
 each subject has six consecutive rows, one for each activity.  This group of 6 row for each subject 
 is ordered by the subject id (1 o 30, and the activity code (1 to 6).  There are a total of 180 rows, 
