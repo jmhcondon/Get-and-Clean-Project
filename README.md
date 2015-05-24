@@ -1,3 +1,17 @@
+**************
+The "sub_act_feature_avgs.txt" file output by the script was created by write.table() using row.name=FALSE. To view it
+properly in R please use read.table() using row.name=FALSE.
+**************
+
+**************
+To run the script the files created from unzipping samsung_exercise_data.zip must be in the working directory. The zip file may be downloaded at the following URL:
+
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles% 2FUCI%20HAR%20Dataset.zip
+
+A full description of the dataset is available at:
+http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition +Using+Smartphones
+**************
+
 The is the README.md for the Get and Clean course project.  The purpose of the assignment
 was to demonstrate the ability to collect, work with and clean a data set. The goal was to
 prepare a tidy data set that could be used for later analysis.
