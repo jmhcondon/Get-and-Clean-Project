@@ -115,7 +115,8 @@ entropy(): Signal entropy
 arCoeff(): Autorregresion coefficients with Burg order equal to 4 
 correlation(): correlation coefficient between two signals
 maxInds(): index of the frequency component with largest magnitude mean
-Freq(): Weighted average of the frequency components to obtain a mean frequency skewness(): skewness of the frequency domain signal 
+Freq(): Weighted average of the frequency components to obtain a mean frequency skewness(): 
+skewness of the frequency domain signal 
 kurtosis(): kurtosis of the frequency domain signal 
 bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of each window. 
 angle(): Angle between to vectors.
@@ -133,7 +134,7 @@ tBodyGyroJerkMean
 DATA PROVIDED IN THE DATASET
 
 Each record provides: 
-- Triaxial(XYZ) acceleration from the accelerometer (total acceleration) and the estimated 		body acceleration. 
+- Triaxial(XYZ) acceleration from the accelerometer (total acceleration) and the estimated body acceleration. 
 - Triaxial Angular velocity from the gyroscope. 
 - A 561-feature vector with time and frequency domain variables. 
 - Its activity label. 
@@ -169,7 +170,6 @@ subtracting the gravity from the total acceleration.
 the gyroscope for each window sample. The units are radians/second.
 
 *********** END EXTRACT ****************
-
 
 VARIABLE UNITS
 
