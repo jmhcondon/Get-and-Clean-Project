@@ -14,10 +14,11 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition +Using+Smartph
 **************
 
 **************
-Please refer to the README.md for a detailed explanation of the script and how the table was created, including all transformations of the original dataset.
+Please refer to the README.md for a detailed explanation of the script and how the table was created, including all transformations of the original dataset, including how the script modifies and updates the codebooks available with 
+the source data.
 **************
 
-This is the codebook describing the independent tidy data set withthe average of each selected 
+This is the codebook describing the independent tidy data set with the average of each selected 
 mean and standard deviation variable for each activity and each subject.
 
 Each row consists of the average value for each of the selected measurements on the mean and standard deviation 
