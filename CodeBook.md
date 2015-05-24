@@ -21,15 +21,13 @@ the source data.
 This is the codebook describing the independent tidy data set with the average of each selected 
 mean and standard deviation variable for each activity and each subject.
 
-Each row consists of the average value for each of the selected measurements on the mean and standard deviation 
+Each row consists of the average value for each of the 66 selected measurements on the mean and standard deviation 
 feature for a single subject performing a single activity. Each subject performed each of the 
 six activities, Walking, Walking Upstairs, Walking Downstairs, Sitting, Standing, and Laying, numbered 1 to 6 
 respectively.  
 
 Since 30 subjects participated, this results in 30 subjects by 6 activities each, for a total of 180 rows.  
-Each row has 69 columns, 3 for the subject, activity code, and activity, and 66 for the average value of all 
-the observation for the 66 mean and std features  for that subject performing that activity. Also, all 
-the column feature names have been simplified and made syntactically correct.
+Each row has 69 columns, 3 for the subject, activity code, and activity, and 66 for the average value of selected features  for that subject performing that activity. Also, all the column feature names have been simplified and made syntactically correct.
 
 *** DATASET COLUMNS ***
 These are the columns in the dataset. There are 66 average and standard deviation feature variable columna, 
