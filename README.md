@@ -156,9 +156,6 @@ the gyroscope for each window sample. The units are radians/second.
 
 *********** END EXTRACT ****************
 
-##The naming conventions used for the feature names are somewhat hard to penetrate. the
-####@following table provides a translation of sorts.
-##
 
 VARIABLE UNITS
 
